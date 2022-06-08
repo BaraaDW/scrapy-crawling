@@ -1,0 +1,54 @@
+[
+ {
+  "website_name" : "nasainarabic.net",
+  "description" : [
+                    {
+                      "category_type" : "outer-space",
+                      "category_url" : "https://nasainarabic.net/main/categories/view/outer-space",
+                      "depth" : "2020-07-16 08:12:07"
+                    },
+                    {
+                      "category_type" : "technology",
+                      "category_url" : "https://nasainarabic.net/main/categories/view/technology",
+                      "depth" : "2021-06-11 07:57:14"
+                    }
+                  ],
+  "xpath" : {
+              "next_page" : "//li[@class='active']/following-sibling::li/a[@href]",
+              "articles" : "//section[@class=\"articles\"]/article",
+              "article_url" : ".//header/*/a[@href]",
+              "article_date" : ".//time[@datetime]",
+              "title" : "//header[@class=\"page-header\"]/*/text()",
+              "date" : "//ul[@class=\"list-inline text-muted\"]/li[1]//time[@datetime]",
+              "views" : "//ul[@class=\"list-inline text-muted\"]/li[2]/text()",
+              "image" : "//div[@itemprop=\"image\"]/img[@src]",
+              "content" : "//div[@itemprop=\"articleBody\"]//text()"
+            }
+  },
+  {
+  "website_name" : "tishreen.news.sy",
+  "description" : [
+                    {
+                      "category_type" : "sport",
+                      "category_url" : "http://tishreen.news.sy/?cat=21",
+                      "depth" : "2022-05-09T13:41:10+02:00"
+                    },
+                    {
+                      "category_type" : "health",
+                      "category_url" : "http://tishreen.news.sy/?cat=52",
+                      "depth" : "2022-01-18T00:38:03+02:00"
+                    }
+                  ],
+  "xpath" : {
+              "next_page" : "//span[@aria-current=\"page\"]/following-sibling::a[@href]",
+              "articles" : "//section/following-sibling::div/article",
+              "article_url" : ".//*[@class='title']/a[@href]",
+              "article_date" : ".//time[@datetime]",
+              "title" : "//article//span[@class=\"post-title\"]/text()",
+              "date" : "//article//time[@datetime]",
+              "views" : "//no/view/in/this/website",
+              "image" : "//article//img[@src]",
+              "content" : "//article/div[contains(@class,'content')]//text()"
+            }
+  }
+]

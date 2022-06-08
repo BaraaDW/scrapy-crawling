@@ -1,0 +1,27 @@
+
+{
+  "website_name" : "tishreen.news.sy",
+  "description" : [
+                    {
+                      "category_type" : "sport",
+                      "category_url" : "http://tishreen.news.sy/?cat=21",
+                      "depth" : "2022-05-11T20:37:00+02:00"
+                    },
+                    {
+                      "category_type" : "health",
+                      "category_url" : "http://tishreen.news.sy/?cat=52",
+                      "depth" : "2022-01-26T22:53:03+02:00"
+                    }
+                  ],
+  "xpath" : {
+              "next_page" : "//span[@aria-current=\"page\"]/following-sibling::a[@href]",
+              "articles" : "//section/following-sibling::div/article",
+              "article_url" : ".//*[@class='title']/a[@href]",
+              "article_date" : ".//time[@datetime]",
+              "title" : "//article//span[@class=\"post-title\"]/text()",
+              "date" : "//article//time[@datetime]",
+              "views" : "//no/view/in/this/website",
+              "image" : "//article//img[@data-src]",
+              "content" : "//article/div[contains(@class,'content')]//text()"
+            }
+}
